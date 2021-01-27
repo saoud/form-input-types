@@ -9,30 +9,35 @@
 </head>
 
 <body>
-  <label for="name">Enter your name:</label>
-  <input type="text" id="name">
-  </select>
-  <div class="radio">
-    <label>
-      <input type="radio" name="food" value="Burger">
-      Burger
-    </label> 
-  <div class="radio">
-    <label>
-      <input type="radio" name="food" value="Pizza">
-      Pizza
-    </label> 
+<form>
+
+<div class="container">
+  <form id="formOne">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name">
+
     <div class="radio">
-    <label>
-      <input type="radio" name="food" value="Sushi">
-      Sushi
-    </label> 
+      <label>
+        <input type="radio" name="food" value="Burger">
+        Burger
+      </label> 
+    <div class="radio">
+      <label>
+        <input type="radio" name="food" value="Pizza">
+        Pizza
+      </label> 
+    <div class="radio">
+      <label>
+        <input type="radio" name="food" value="Sushi">
+        Sushi
+      </label> 
     <div class="radio">
       <label>
         <input type="radio" name="food" value="Chinese">
         Chinese
       </label> 
     </div>
+
     <select class="form-control" id="music">
       <option value="1">Rock</option>
       <option value="2">EDM</option>
@@ -40,5 +45,13 @@
       <option value="4">Jazz</option>
     </select>
 
+    <div class="form-group">
+      <label for="color">What is your favorite color?</label>
+      <input id="color" class="form-control" type ="color">
+    </div>
+  </form>
+  </div>
+
+    <button type"button">Submit</button>
   </body>
 
