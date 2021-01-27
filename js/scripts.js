@@ -1,12 +1,12 @@
 $(document).ready(function() {
   console.log("this is running!")
-  $("#formOne").submit(function(event) {
-    console.log("this is still running!")
-    const favoriteFood = $("input:radio[name=food]:checked").val();
-    $(".food").append("i like pizza");
-
-    $("#output").show();
-
+  $("#formOne").click(function(event) {
     event.preventDefault();
+    console.log("this is still running!")
+    // const favoriteFood = $("input:radio[name=food]:checked").val();
+    // $(".food").append("i like pizza");
+
+    $("#output").text("hey is this working?");
+
   });
 });
